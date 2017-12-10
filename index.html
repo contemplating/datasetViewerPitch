@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dataset Viewer</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Dataset Viewer">
+  <meta name="author" content="Jaco van der Plas">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Dataset Viewer</h1>
+    <h2>A tool for viewing data sets</h2>
+    <p>Jaco van der Plas<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>What is the dataset viewer?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Select a dataset you want to view</li>
+<li>Choose the properties you want to inspect</li>
+<li>Look at the data in the plot tab</li>
+<li>You change the variables on the fly to get a feel for the data</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id1" style="background:;">
+  <hgroup>
+    <h2>Why would you want to use it?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The plots can give you insight into the data set, for example you can the following plot for the iris data set:</p>
+
+<pre><code class="r">plot_ly(x = iris$Sepal.Length, y = iris$Petal.Length, 
+    color = iris$Species, type = &#39;scatter&#39;,  mode = &#39;markers&#39; )
+</code></pre>
+
+<p><img src="figure/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id2" style="background:;">
+  <hgroup>
+    <h2>How does it work</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>If you select a dataset, the program will read which variables are present in the data set</li>
+<li>It fills the x-axis, y-axis and color dorpdown with the variable names </li>
+<li>Evertime the used select a different variable to display the plot is recreated based on on the selected variables </li>
+<li>It uses the Plotly library for plot, so you can zoom in and use other plotly options<br></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id3" style="background:;">
+  <hgroup>
+    <h2>What not and Thanks</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Ideas for the future</h3>
+
+<ul>
+<li>Upload csv files directly</li>
+<li>More plot options</li>
+<li>Factor analysis and fitting procedures</li>
+</ul>
+
+<h3>Thanks</h3>
+
+<p>Thanks for you attention, please feel free to contact me for questions and don&#39;t forget to use the dataset viewer</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='What is the dataset viewer?'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Why would you want to use it?'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How does it work'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='What not and Thanks'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
